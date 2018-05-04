@@ -24,3 +24,18 @@ header .intro {
 .ribbon-content {
 	grid-column: 2 / -2;
 }
+.features .title {
+	grid-column: 2 / -2;
+}
+.features .features-content {
+	grid-column: 2 / -2;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+}
+.footer-content {
+	grid-column: 2 / -2;
+}
+footer .copyright {
+	grid-column: 2 / -2;
+}

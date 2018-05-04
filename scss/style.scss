@@ -19,12 +19,13 @@
 $accent-color: #A3C9D3;
 $accent-font: Georgia, "Times New Roman", Times, serif;
 %section-title {
+    margin-bottom: 20px;
     font-family: $accent-font;
 	font-size: 22px;
     font-weight: normal;
     line-height: normal;
     text-align: center;
-    color: #FFFFFF;
+    color: #888888;
 }
 .active {
     color: $accent-color !important;
@@ -189,9 +190,139 @@ header .intro .title p {
 }
 .ribbon h6 {
     @extend %section-title;
-    margin-bottom: 20px;
-    color: #888888;
 }
 .ribbon p {
     margin-bottom: 50px;
+}
+/* RIBBON ==================================================================== */
+.features {
+    padding: 80px 0;
+    text-align: center;
+}
+.features .title {
+    color: #888888;
+    margin-bottom: 80px;
+}
+.features .title h6 {
+    @extend %section-title;
+}
+.features-content .card {
+    padding-top: 20px;
+}
+.features-content .card-icon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#sq1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto 60px;
+    width: 100px;
+    height: 100px;
+    background-color: $accent-color;
+    border-color: $accent-color;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: $accent-color;
+    color: #FFFFFF;
+}
+#sq1  p {
+    font-size: 40px;
+    font-weight: 400;
+    z-index: 1;
+}
+#sq2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    background-color: $accent-color;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: $accent-color;
+    transform: rotate(45deg);
+    transition: all .3s ease-in-out;
+}
+.features-content .card:hover #sq2 {
+    transform: rotate(360deg);
+}
+.features-content .card h6 {
+    @extend %section-title;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.features-content .card > p {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #888888;
+}
+.features-content .card a {
+    color: $accent-color;
+}
+.features-content .card:hover h6 {
+    color: $accent-color;
+}
+/* RIBBON ==================================================================== */
+footer {
+    text-align: center;
+    background-image: url(../images/footer-background.png);
+    background-position: bottom;
+    background-size: cover;
+}
+footer .footer-content {
+    padding: 80px 0;
+    border-bottom: 1px solid;
+    border-color: #888888;
+}
+footer .footer-content h6 {
+    margin-bottom: 20px;
+    @extend %section-title;
+    color: $accent-color;
+    text-transform: uppercase;
+}
+.footer-content ul {
+    list-style: none;
+}
+.footer-content ul li {
+    margin-top: 8px;
+    margin-right: 5px;
+    display: inline-block;
+    background-color: $accent-color;
+    border-radius: 5px;
+}
+.footer-content ul li:nth-of-type(6n+6) {
+    margin-right: 0;
+}
+.footer-content ul li a {
+    color: #FFFFFF;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: center;
+}
+.footer-content ul li:nth-of-type(6n+1):hover {
+    background-color: #3B5998;
+}
+.footer-content ul li:nth-of-type(6n+2):hover  {
+    background-color: #00ACEE;
+}
+.footer-content ul li:nth-of-type(6n+3):hover  {
+    background-color: #EA4C89;
+}
+.footer-content ul li:nth-of-type(6n+4):hover  {
+    background-color: #0E76A8;
+}
+.footer-content ul li:nth-of-type(6n+5):hover  {
+    background-color: #DB4A39;
+}
+.footer-content ul li:nth-of-type(6n+6):hover  {
+    background-color: #4E658E;
+}
+footer .copyright {
+    padding: 30px 0;
 }
