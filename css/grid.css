@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr minmax(320px, 978px) 1fr;
+}
+header .logo{
+	grid-column: 2 / -2;
+}
+header .menu {
+	grid-column: 2 / -2;
+}
+header .intro {
+	grid-column: 2 / -2;
+}
+.album-content {
+	grid-column: 2 / -2;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 30px;
+	align-content: center;
+}
+.album-content article {
+	grid-column: 1 / 3;
+}
