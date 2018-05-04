@@ -21,3 +21,6 @@ header .intro {
 .album-content article {
 	grid-column: 1 / 3;
 }
+.ribbon-content {
+	grid-column: 2 / -2;
+}

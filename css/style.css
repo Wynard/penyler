@@ -16,11 +16,11 @@
   transition: all .3s ease-in-out;
 }
 
-header .intro .title h2 {
+header .intro .title h2, .ribbon h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 22px;
   font-weight: normal;
   line-height: normal;
-  text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
 }
@@ -197,4 +197,23 @@ header .intro .title p {
 .album-content a figure:hover::after {
   background-color: #A3C9D3;
   opacity: .6;
+}
+
+/* RIBBON ==================================================================== */
+.ribbon {
+  padding: 80px 0;
+  background-image: url(../images/ribbon-background.png);
+  background-position: top;
+  background-size: cover;
+  text-align: center;
+  color: #888888;
+}
+
+.ribbon h6 {
+  margin-bottom: 20px;
+  color: #888888;
+}
+
+.ribbon p {
+  margin-bottom: 50px;
 }
